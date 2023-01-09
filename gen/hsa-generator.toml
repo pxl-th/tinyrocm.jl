@@ -1,0 +1,6 @@
+[general]
+module_name = "libHSA"
+library_name = "libHSA_path"
+output_file_path = "./libHSA.jl"
+jll_pkg_name = "hsa_rocr_jll"
+export_symbol_prefixes = []

@@ -1,0 +1,12 @@
+name = "tinyrocm"
+uuid = "4abc0c4e-6a79-4c83-9d9e-fcb240a5cea5"
+authors = ["Anton Smirnov <tonysmn97@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+CEnum = "fa961155-64e5-5f13-b03f-caf6b980ea82"
+GPUCompiler = "61eb1bfa-7361-4325-ad38-22787b887f55"
+LLD_jll = "d55e3150-da41-5e91-b323-ecfd1eec6109"
+LLVM = "929cbde3-209d-540e-8aea-75f648917ca0"
+ROCmDeviceLibs_jll = "873c0968-716b-5aa7-bb8d-d1e2e2aeff2d"
+hsa_rocr_jll = "dd59ff1a-a01a-568d-8b29-0669330f116a"
