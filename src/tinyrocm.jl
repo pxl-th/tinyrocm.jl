@@ -13,7 +13,7 @@ include("compiler/intrinsics/indexing.jl")
 include("compiler/dims.jl")
 include("compiler/device_libs.jl")
 include("compiler/gpucompiler.jl")
-include("compiler/host_kernel.jl")
+include("compiler/kernel.jl")
 include("compiler/execution.jl")
 
 function __init__()
@@ -34,8 +34,8 @@ function main()
     signal = HSA.Signal()
     queue = HSA.Queue()
 
-    @time kernel = rocfunction(kern!)
-    @time kernel(queue, signal; groupsize=128, gridsize=1024)
+    @time kernel = rocfunction(kern!; device)
+    @time kernel(queue, signal; groupsize=128, gridsize=128)
     @time wait(signal)
 
     # @show device
