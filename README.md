@@ -1,7 +1,7 @@
 # tinyrocm.jl
 
 Minimal implementation of AMDGPU ROCm programming in Julia from scratch. <br/>
-For learning purposes, [AMDGPU.jl](https://github.com/JuliaGPU/AMDGPU.jl) was user as a reference.
+For learning purposes, [AMDGPU.jl](https://github.com/JuliaGPU/AMDGPU.jl) was used as a reference.
 
 Supports simplest kernels at the moment:
 
